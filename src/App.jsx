@@ -1,18 +1,14 @@
-import React, { useEffect, useState } from 'react'
-import Landingpage from './TailwindBlocks/Components/Pages/Landingpage'
+import React from 'react'
+import Navbar from './ReduxToolkit/Navbar'
+import Products from './ReduxToolkit/Products'
+
 
 const App = () => {
-  const [theme,settheme]=useState('light')
-
-  useEffect(() =>{
-    if(theme === 'dark'){
-      document.documentElement.classList.add('dark')
-    }
-  })
   return (
-    <div>
-      <Landingpage/>
-    </div>
+    <>
+    <Navbar/>
+    <Products/>
+    </>
   )
 }
 
